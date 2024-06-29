@@ -37,7 +37,7 @@ h6 {
 }
 
 ul {
-  font-size: 24px;
+  font-size: 1.5em;
   list-style-type: disc;
   margin: 10px 100px;
 }
@@ -89,11 +89,6 @@ nav a:link {
 
 nav a:hover {
   color: var(--btn-primary);
-}
-
-.icon-row img {
-  width: 150px;
-  border-radius: 50%;
 }
 
 a:active {
@@ -164,9 +159,15 @@ section p {
 
 .icon-row {
   display: flex;
-  gap: 60px;
+  gap: 150px;
   align-items: center;
   justify-content: space-between;
+}
+
+.icon-row img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .services {
@@ -236,25 +237,30 @@ footer h3 {
 @media only screen and (max-width: 992px) {
   body {
     background-color: lightblue;
+    margin-inline: 0;
   }
 
-  .icon-row {
-    flex-direction: column;
+  section p {
+    font-size: 1.2em;
   }
 
-  .services-container {
-    flex-direction: column;
+  section ul {
+    font-size: 1.2em;
   }
 
+  .icon-row,
+  .services-container,
+  .subscribe-form,
+  nav,
   footer {
     flex-direction: column;
   }
 
-  .subscribe-form {
-    flex-direction: column;
+  .hero-text {
+    font-size: 3.2rem;
   }
 
-  .hero-text {
-    font-size: 3.5rem;
+  section h1 {
+    font-size: 2em;
   }
 }
